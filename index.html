@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorcycle-Web-Page</title>
+    <!-- * Css Link -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- *Container Area -->
+    <div class="container" id="bike">
+      <nav>
+        <img class="logo" src="./Images/logo.png" />
+        <a href="#" class="btn">Test Drive</a>
+      </nav>
+
+      <!-- *Content Area -->
+      <div class="content">
+        <h2>The BMW</h2>
+        <h1>S1000RR</h1>
+        <p>
+          <span>BMW S 1000 RR </span> is a high-performance superbike known for
+          its cutting-edge technology, powerful engine, and track-focused
+          design. Here are some key features: <span>Engine:</span> 999cc,
+          inline-4 cylinder engine with 205 hp at 13,000 rpm and 113 Nm of
+          torque at 11,000 rpm. It offers incredible acceleration and top
+          speeds.
+        </p>
+        <h3>Choose Your Colour</h3>
+        <div class="clour-select">
+          <div id="red"></div>
+          <div id="blue"></div>
+          <div id="black"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *Js Area -->
+    <script>
+      let redBtn = document.getElementById("red");
+      let blueBtn = document.getElementById("blue");
+      let blackBtn = document.getElementById("black");
+      let bike = document.getElementById("bike");
+
+      blackBtn.onclick = function () {
+        bike.style.backgroundImage =
+          "url(https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-black-storm-metallic-1677058621251.jpg?q=80&wm=3)";
+      };
+      blueBtn.onclick = function () {
+        bike.style.backgroundImage =
+          "url(https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-light-white-1677058607620.jpg?q=80&wm=3)";
+      };
+
+      redBtn.onclick = function () {
+        bike.style.backgroundImage =
+          "url(https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-passion-1677058615026.jpg?q=80&wm=3)";
+      };
+    </script>
+  </body>
+</html>

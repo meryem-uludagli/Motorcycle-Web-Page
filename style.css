@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  height: 100vh;
+  background-image: url(https://imgd.aeplcdn.com/1056x594/n/bw/models/colors/bmw-select-model-passion-1677058615026.jpg?q=80&wm=3);
+  background-size: 70%;
+  background-position: 90% 80%;
+  background-repeat: no-repeat;
+  padding: 20px 10%;
+  transition: background-image 0.3s;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+nav .btn {
+  text-decoration: none;
+  color: #fff;
+  background: #ff5a5f;
+  padding: 15px 50px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+nav .btn:hover {
+  background: #ff4045;
+  transform: translateY(-5px);
+}
+
+.content {
+  margin-top: 10%;
+}
+
+.content span {
+  font-size: larger;
+  color: #dd0910;
+}
+
+.content h1 {
+  color: #222;
+  font-size: 80px;
+  margin-top: -25px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff5a5f, #222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.content h1:hover {
+  transform: scale(1.05);
+}
+
+.content h2 {
+  color: #ff5a5f;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #ff5a5f, #222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.content h2:hover {
+  transform: scale(1.05);
+}
+
+.content p {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+.content h3 {
+  margin-top: 30px;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.clour-select div {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.clour-select div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.clour-select {
+  display: flex;
+  margin-top: 30px;
+}
+
+.clour-select #red {
+  background: red;
+}
+
+.clour-select #blue {
+  background: blue;
+}
+
+.clour-select #black {
+  background: black;
+}
